@@ -46,7 +46,7 @@ nginx -t && nginx -s reload
 ```
 ## 3. Obtaining SSL/TLS Certificate
 ```
-sudo certbot --nginx -d example.com -d www.example.com
+sudo certbot --nginx -d example-rpc.com -d www.example-rpc.com
 ```
 
 If configured correctly you should be able to connect to the JSON RPC at `https://www.example-rpc.com` and the Websocket RPC at `wss://www.example-rpc.com/ws`.
