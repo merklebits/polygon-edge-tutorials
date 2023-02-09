@@ -1,6 +1,6 @@
 # Exposing Secure JSON and Websocket RPCs via NGINX
 
-This tutorial assumes you were able to [set up Polygon Edge](https://github.com/nonceblox/polygon-edge-tutorials/setup_edge_docker.md) nodes on your cloud machine. 
+This tutorial assumes you were able to [set up Polygon Edge](https://github.com/nonceblox/polygon-edge-tutorials/blob/master/setup_edge_docker.md) nodes on your cloud machine. 
 
 ## 1. Install nginx and certbot
 
