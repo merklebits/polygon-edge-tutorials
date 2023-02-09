@@ -48,4 +48,4 @@ sudo docker-compose down
 ```
 ## 3. Setting up nginx and certbot
 
-Follow the instructions [here](https://github.com/nonceblox/polygon-edge-tutorials/setup_nginx.md) to expose your JSON RPC and Websocket RPC urls to the public via nginx.
+Follow the instructions [here](https://github.com/nonceblox/polygon-edge-tutorials/blob/master/setup_nginx.md) to expose your JSON RPC and Websocket RPC urls to the public via nginx.
