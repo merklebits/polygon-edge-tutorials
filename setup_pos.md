@@ -35,7 +35,20 @@ PRIVATE_KEYS=<PRIVATE KEY OF STAKER>
 STAKING_CONTRACT_ADDRESS=0x0000000000000000000000000000000000001001
 ```
 
-## 3. Staking
+## 3. Staking and Unstaking
+### Build Contracts
+```
+npm run build
+```
+### Run unit tests
+```
+npm run test
+```
+### Deploy Contract to Polygon Edge
+```
+npm run deploy
+```
+### Stake balance to contract
 Next, stake with the following command:
 ```
 npm run stake
@@ -44,13 +57,13 @@ The `stake` Hardhat script stakes a default amount of `1 ETH`, which can be chan
 
 If the funds being staked are `>=1 ETH`, the validator set on the Staking Smart Contract is updated, and the address will be a part of the validator set next epoch onwards.
 
-## 4. Unstaking
+### Unstaking
 Address that have a stake can only unstake all of their funds at once
 ```
 npm run unstake
 ```
 
-## 5. Fetching the list of stakers
+### Fetching the list of stakers
 All addresses that stake funds are saved to the Staking Smart Contract.
 ```
 npm run info
