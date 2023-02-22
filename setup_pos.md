@@ -17,6 +17,8 @@ The `--pos` flag also pre-deploys the [Staking Smart Contract](https://github.co
 
 The ``epoch-size`` flag sets the frequency with which the validator set updates. At 50, the validator set wwill be updated every 100 seconds.
 
+Remember to premine tokens to the validator's public address you wish to stake to.
+
 ## 2. Setting up the Staking Smart Contract
 
 The staking smart contract repo is a hardhat project, which requires NPM.
@@ -31,10 +33,13 @@ vim .env
 In the `.env` file add the following parameters:
 ```
 JSONRPC_URL=http://localhost:10002
-PRIVATE_KEYS=<PRIVATE KEY OF STAKER>
+PRIVATE_KEYS=<PRIVATE KEY OF VALIDATOR>
 STAKING_CONTRACT_ADDRESS=0x0000000000000000000000000000000000001001
 ```
-
+Private key of the validator can be found in it's data directory, inside the `consensus` folder.
+```
+cat test-chain-1/consensus/validator.key
+```
 ## 3. Staking and Unstaking
 ### Build Contracts
 ```
@@ -43,10 +48,6 @@ npm run build
 ### Run unit tests
 ```
 npm run test
-```
-### Deploy Contract to Polygon Edge
-```
-npm run deploy
 ```
 ### Stake balance to contract
 Next, stake with the following command:
